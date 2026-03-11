@@ -79,9 +79,8 @@ FDR < 0.05
 PC1 explains 54% of total variance
 PC2 explains 22% of total variance
 Tumor and normal samples cluster distinctly along PC1, indicating strong tumor-driven transcriptional reprogramming.
-!(Results/plot pca of the 6 files.png)
-![PCA](Results/plot pca of the 6 files.png)
-Differential Expression
+<img width="431" height="236" alt="plot pca of the 6 files" src="https://github.com/user-attachments/assets/34dc9bba-dc1b-4605-8ce3-dd76e558a8c9" />
+### Differential Expression
 3008 genes significant at FDR < 0.05
 2640 genes with |log2FC| > 1
 This indicates extensive transcriptomic remodeling in tumor tissue.
