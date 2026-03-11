@@ -44,13 +44,13 @@ Salmon index built using:
 ## 3️⃣ Transcript Quantification
 Transcript-level quantification was performed using: Salmon v1.10.3
 For each sample:
-salmon quant \
-  -i salmon_index \
-  -l A \
-  -1 sample_1.fastq \
-  -2 sample_2.fastq \
-  -p 3 \
-  -o sample_output
+#### salmon quant \
+ #### -i salmon_index \
+ #### -l A \
+ #### -1 sample_1.fastq \
+ #### -2 sample_2.fastq \
+ #### -p 3 \
+#### -o sample_output
 
 Output: quant.sf
 This was done for all 6 samples.
@@ -79,11 +79,14 @@ FDR < 0.05
 PC1 explains 54% of total variance
 PC2 explains 22% of total variance
 Tumor and normal samples cluster distinctly along PC1, indicating strong tumor-driven transcriptional reprogramming.
-!|
+!(Results/plot pca of the 6 files.png)
+
 Differential Expression
 3008 genes significant at FDR < 0.05
 2640 genes with |log2FC| > 1
 This indicates extensive transcriptomic remodeling in tumor tissue.
+!(Results/Volcano plot WGS.png)
+!(Results/Heatmap.png)
 
 Biological themes:
 Extracellular matrix remodeling
@@ -102,7 +105,7 @@ Regulation of T cell activation
 Leukocyte proliferation
 Lymphocyte differentiation
 Indicates strong immune microenvironment involvement.
-!(
+!(Results/GO enrichment.png)
 
 #### KEGG Pathways
 Top enriched:
@@ -115,11 +118,12 @@ These support:
 Tumor–stroma interaction
 Immune activation
 Adhesion dysregulation
+!(Results/KEGG ENRICHMENT PLOT.png)
 
 ## 8️⃣ Gene Set Enrichment Analysis (GSEA)
 
 Ranked gene list analysis confirmed coordinated enrichment of immune-related and adhesion-related biological processes, reinforcing over-representation findings.
-!
+!(Results/GSEA results.png)
 
 ## 9️⃣ Biological Interpretation
 
