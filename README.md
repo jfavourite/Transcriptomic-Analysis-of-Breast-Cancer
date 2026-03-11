@@ -80,7 +80,7 @@ PC1 explains 54% of total variance
 PC2 explains 22% of total variance
 Tumor and normal samples cluster distinctly along PC1, indicating strong tumor-driven transcriptional reprogramming.
 !(Results/plot pca of the 6 files.png)
-
+![PCA_PLOT](Results/plot_pca_of_the_6_files.png)
 Differential Expression
 3008 genes significant at FDR < 0.05
 2640 genes with |log2FC| > 1
