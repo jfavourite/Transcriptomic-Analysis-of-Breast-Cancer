@@ -84,10 +84,10 @@ Tumor and normal samples cluster distinctly along PC1, indicating strong tumor-d
 3008 genes significant at FDR < 0.05
 2640 genes with |log2FC| > 1
 This indicates extensive transcriptomic remodeling in tumor tissue.
-!(Results/Volcano plot WGS.png)
-!(Results/Heatmap.png)
+<img width="431" height="236" alt="Volcano plot WGS" src="https://github.com/user-attachments/assets/f67e2e64-646f-4bc4-8dfb-df5b8297bfaf" />
+<img width="1030" height="563" alt="Heatmap" src="https://github.com/user-attachments/assets/30717f1b-f2d6-4c0d-9766-bdeb59470a72" />
 
-Biological themes:
+### Biological themes:
 Extracellular matrix remodeling
 Immune activation
 Chemokine signaling
@@ -104,7 +104,7 @@ Regulation of T cell activation
 Leukocyte proliferation
 Lymphocyte differentiation
 Indicates strong immune microenvironment involvement.
-!(Results/GO enrichment.png)
+<img width="961" height="525" alt="GO enrichment" src="https://github.com/user-attachments/assets/be1b87bf-d6c0-4c67-b90e-1fbfd2074c99" />
 
 #### KEGG Pathways
 Top enriched:
@@ -117,12 +117,12 @@ These support:
 Tumor–stroma interaction
 Immune activation
 Adhesion dysregulation
-!(Results/KEGG ENRICHMENT PLOT.png)
+<img width="824" height="450" alt="KEGG ENRICHMENT PLOT" src="https://github.com/user-attachments/assets/b9d5ef3a-f660-4f5c-9985-b6954c30376c" />
 
 ## 8️⃣ Gene Set Enrichment Analysis (GSEA)
 
 Ranked gene list analysis confirmed coordinated enrichment of immune-related and adhesion-related biological processes, reinforcing over-representation findings.
-!(Results/GSEA results.png)
+<img width="1373" height="750" alt="GSEA results" src="https://github.com/user-attachments/assets/bd4f8955-7971-4265-a079-b4e9369181d9" />
 
 ## 9️⃣ Biological Interpretation
 
