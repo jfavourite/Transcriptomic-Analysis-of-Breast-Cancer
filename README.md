@@ -7,13 +7,13 @@ Organism: Homo sapiens
 
 The analysis covers:
 
-Raw data acquisition from SRA
-FASTQ generation
-Transcript-level quantification
-Gene-level summarization
-Differential expression analysis
-Functional enrichment (GO, KEGG)
-Gene Set Enrichment Analysis (GSEA)
+Raw data acquisition from SRA,
+FASTQ generation,
+Transcript-level quantification,
+Gene-level summarization,
+Differential expression analysis,
+Functional enrichment (GO, KEGG),
+Gene Set Enrichment Analysis (GSEA). 
 
 This repository demonstrates computational reproducibility, statistical rigor, and biological interpretation suitable for high-level research.
 
@@ -60,8 +60,8 @@ This was done for all 6 samples.
 Transcript-to-gene mapping was created from:
 gencode.v46.annotation.gtf
 Using R:
-tximport
-GenomicFeatures
+tximport, 
+GenomicFeatures, 
 Transcripts were aggregated to gene-level counts.
 
 ## 5️⃣ Differential Expression Analysis
@@ -76,7 +76,7 @@ FDR < 0.05
 
 ## 6️⃣ Results
 ### Global Structure (PCA)
-PC1 explains 54% of total variance
+PC1 explains 54% of total variance, 
 PC2 explains 22% of total variance
 Tumor and normal samples cluster distinctly along PC1, indicating strong tumor-driven transcriptional reprogramming.
 <img width="431" height="236" alt="plot pca of the 6 files" src="https://github.com/user-attachments/assets/34dc9bba-dc1b-4605-8ce3-dd76e558a8c9" />
@@ -84,13 +84,14 @@ Tumor and normal samples cluster distinctly along PC1, indicating strong tumor-d
 3008 genes significant at FDR < 0.05
 2640 genes with |log2FC| > 1
 This indicates extensive transcriptomic remodeling in tumor tissue.
+
 <img width="431" height="236" alt="Volcano plot WGS" src="https://github.com/user-attachments/assets/f67e2e64-646f-4bc4-8dfb-df5b8297bfaf" />
 <img width="1030" height="563" alt="Heatmap" src="https://github.com/user-attachments/assets/30717f1b-f2d6-4c0d-9766-bdeb59470a72" />
 
 ### Biological themes:
-Extracellular matrix remodeling
-Immune activation
-Chemokine signaling
+Extracellular matrix remodeling, 
+Immune activation, 
+Chemokine signaling.
 
 ## 7️⃣ Functional Enrichment
 
@@ -99,24 +100,24 @@ clusterProfiler
 #### GO Biological Processes
 
 Top enriched:
-Leukocyte cell-cell adhesion
-Regulation of T cell activation
-Leukocyte proliferation
-Lymphocyte differentiation
+Leukocyte cell-cell adhesion, 
+Regulation of T cell activation, 
+Leukocyte proliferation, 
+Lymphocyte differentiation, 
 Indicates strong immune microenvironment involvement.
 <img width="961" height="525" alt="GO enrichment" src="https://github.com/user-attachments/assets/be1b87bf-d6c0-4c67-b90e-1fbfd2074c99" />
 
 #### KEGG Pathways
 Top enriched:
-Systemic lupus erythematosus
-Cell adhesion molecule interaction
-Neutrophil extracellular trap formation
-ECM-receptor interaction
-Integrin signaling
+Systemic lupus erythematosus, 
+Cell adhesion molecule interaction, 
+Neutrophil extracellular trap formation, 
+ECM-receptor interaction, 
+Integrin signaling, 
 These support:
-Tumor–stroma interaction
-Immune activation
-Adhesion dysregulation
+Tumor–stroma interaction, 
+Immune activation, 
+Adhesion dysregulation. 
 <img width="824" height="450" alt="KEGG ENRICHMENT PLOT" src="https://github.com/user-attachments/assets/b9d5ef3a-f660-4f5c-9985-b6954c30376c" />
 
 ## 8️⃣ Gene Set Enrichment Analysis (GSEA)
@@ -127,23 +128,23 @@ Ranked gene list analysis confirmed coordinated enrichment of immune-related and
 ## 9️⃣ Biological Interpretation
 
 Tumor samples exhibit:
-Strong extracellular matrix remodeling 
-Chemokine-driven immune signaling 
-Cell adhesion pathway dysregulation
-Immune infiltration signatures
+Strong extracellular matrix remodeling, 
+Chemokine-driven immune signaling,  
+Cell adhesion pathway dysregulation, 
+Immune infiltration signatures. 
 The high variance explained by PC1 (54%) suggests tumor status is the dominant driver of gene expression variation.
 Overall, results are consistent with:
-Tumor microenvironment remodeling
-Immune engagement
-Stromal activation in breast cancer
+Tumor microenvironment remodeling, 
+Immune engagement, 
+Stromal activation in breast cancer.
 
 ## 🔬 Technical Stack
-Salmon
-tximport
-DESeq2
-clusterProfiler
-org.Hs.eg.db
-pheatmap
-ggplot2
+Salmon;
+tximport;
+DESeq2;
+clusterProfiler;
+org.Hs.eg.db;
+pheatmap;
+ggplot2;
 
 All analyses were performed in R.
